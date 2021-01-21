@@ -5,40 +5,26 @@ plugins {
     id "com.gradle.plugin-publish" version "0.12.0"
 }
 
-group = "com.tignum"
+group = "com.sk"
 version = "1.0.0"
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
-repositories {
-    mavenCentral()
-    maven {
-        url = tignumRepoUrl
-        credentials {
-            username = tignumRepoUsername
-            password = tignumRepoPw
-        }
-    }
-    jcenter()
-    mavenCentral()
-}
 
 pluginBundle {
-    website = 'https://test.com'
-    vcsUrl = 'https://test.com'
-    tags = ["hello", "greeting"]
-    description = 'Greetings from here!'
+    website = 'https://github.com/cricketsamya'
+    vcsUrl = 'https://github.com/cricketsamya'
+    tags = ["gradle", "module"]
+    description = 'A Gradle plugin for extracting Module info'
     plugins {
         sysnodePlugin {
             // id is captured from java-gradle-plugin configuration
-            displayName = 'Gradle Greeting plugin'
+            displayName = 'A Gradle plugin for extracting Module info'
         }
     }
 }
 gradlePlugin {
     plugins {
         register("sysnode.plugin") {
-            id = 'com.tignum.sysnode.plugin'
-            implementationClass = 'com.tignum.sysnode.InfoWriter'
+            id = 'com.sk.sysnode.plugin'
+            implementationClass = 'com.sk.sysnode.InfoWriter'
 
         }
     }
