@@ -15,7 +15,7 @@ pluginBundle {
     tags = ["sysnode", "moduleinfo", "module"]
     description = 'A Gradle plugin for extracting Module info'
     plugins {
-        sysnodePlugin {
+        sysnode {
             displayName = 'A Gradle plugin for extracting Module info'
         }
     }
