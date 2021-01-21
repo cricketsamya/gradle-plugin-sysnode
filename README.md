@@ -1,9 +1,12 @@
 # gradle-plugin-sysnode
-
-./gradlew publishToMavenLocal -> To publish to local maven repo
+```shell
+./gradlew publishToMavenLocal 
+``` 
+-> To publish to local maven repo
 
 How to use
 1. Add this to build.gradle
+```gradle
 buildscript {
     repositories {
         mavenLocal()
@@ -14,3 +17,4 @@ buildscript {
 }
 
 apply plugin: 'com.sk.sysnode.plugin'
+```
