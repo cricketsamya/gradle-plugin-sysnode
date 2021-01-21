@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        maven {
+            url = tignumRepoUrl
+            credentials {
+                username = tignumRepoUsername
+                password = tignumRepoPw
+            }
+        }
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'sysnode'
