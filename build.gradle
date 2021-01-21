@@ -5,27 +5,26 @@ plugins {
     id "com.gradle.plugin-publish" version "0.12.0"
 }
 
-group = "com.sk"
+group = "com.github.cricketsamya"
 version = "1.0.0"
 sourceCompatibility = '1.8'
 
 pluginBundle {
     website = 'https://github.com/cricketsamya'
-    vcsUrl = 'https://github.com/cricketsamya'
-    tags = ["gradle", "module"]
+    vcsUrl = 'https://github.com/cricketsamya/gradle-plugin-sysnode'
+    tags = ["sysnode", "moduleinfo", "module"]
     description = 'A Gradle plugin for extracting Module info'
     plugins {
         sysnodePlugin {
-            // id is captured from java-gradle-plugin configuration
             displayName = 'A Gradle plugin for extracting Module info'
         }
     }
 }
 gradlePlugin {
     plugins {
-        register("sysnode.plugin") {
-            id = 'com.sk.sysnode.plugin'
-            implementationClass = 'com.sk.sysnode.InfoWriter'
+        register("sysnode") {
+            id = 'com.github.cricketsamya.sysnode'
+            implementationClass = 'com.github.cricketsamya.sysnode.InfoWriter'
 
         }
     }

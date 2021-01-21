@@ -1,4 +1,4 @@
-package com.sk.sysnode;
+package com.github.cricketsamya.sysnode;
 
 import org.gradle.api.Action;
 import org.gradle.api.Plugin;

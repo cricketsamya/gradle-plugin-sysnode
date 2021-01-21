@@ -1,6 +1,7 @@
 # gradle-plugin-sysnode
-This plugin will get you information from the module its being applied. 
-e.g. 
+
+This plugin will get you information from the module its being applied. e.g.
+
 ```properties
 #Properties
 prj.version=2021-SNAPSHOT
@@ -14,19 +15,22 @@ group=com.example.test
 ```shell
 ./gradlew publishToMavenLocal 
 ``` 
+
 -> To publish to local maven repo
 
 How to use
+
 1. Add this to build.gradle
+
 ```gradle
 buildscript {
     repositories {
         mavenLocal()
         dependencies {
-            classpath 'com.sk:sysnode:1.0.0'
+            classpath 'com.githun.cricketsamya:sysnode:1.0.0'
         }
     }
 }
 
-apply plugin: 'com.sk.sysnode.plugin'
+apply plugin: 'com.githun.cricketsamya.sysnode'
 ```
